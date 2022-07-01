@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+
+.cta {
+    padding: 100px;
+    background: #005aab;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta .cta-btn {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    padding: 15px 65px;
+    transition: 0.5s;
+    border-radius: 8px;
+    background: #17bf2f;
+    color: #fff;
+}
+
+.cta .cta-btn:hover {
+    border-color: #fff;
+    background: #21e63e;
+}
+
+@media (min-width: 769px) {
+    .cta .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

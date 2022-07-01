@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# Portfoio
+--------------------------------------------------------------*/
+
+.portfolio {
+    padding: 100px 0 20px;
+}
+
+.portfolio .portfolio-item img {
+    position: relative;
+    top: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+    bottom: 0;
+}
