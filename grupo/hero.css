@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 97.9vh;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    position: relative;
+    /* margin-bottom: -90px; */
+    z-index: 99;
+    transition: 0.3s;
+}
+
+#hero:before {
+    content: "";
+    background: #24364548;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+#hero .buttons-hero {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px
+}
+
+#hero .btn-get-started {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    padding: 12px 40px 12px 40px;
+    border-radius: 8px;
+    transition: 0.5s;
+    color: #fff;
+    background: #243645;
+}
+
+#hero .btn-get-started:hover {
+    border-color: #fff;
+    background: #1d4766;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #mobile-text {
+        margin-top: 150px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    #hero .buttons-hero {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+        justify-content: center;
+        row-gap: 15px
+    }
+}
